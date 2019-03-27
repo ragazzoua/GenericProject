@@ -10,7 +10,7 @@ public class Main {
         adelaiCrose.addPlayer(pat);
         adelaiCrose.addPlayer(beckham);
 
-        System.out.println(adelaiCrose.numPlayers());
+        System.out.println("Players in Team " + adelaiCrose.numPlayers());
 
     }
 }
