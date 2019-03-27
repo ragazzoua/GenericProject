@@ -18,15 +18,32 @@ public class Team {
         return name;
     }
 
-    public boolean addPlayer(Player player){
-        if (members.contains(player)){
+    public boolean addPlayer(Player player) {
+        if (members.contains(player)) {
             System.out.println(player.getName() + "is already in the team");
             return false;
-        }
-        else {
+        } else {
             members.add(player);
             System.out.println(player.getName() + "added to the team" + this.name);
+            return true;
         }
+    }
 
+    public int numPlayers() {
+        return this.members.size();
+    }
+
+    public void matchResult(Team opponent, int ourScore, int theirScore) {
+        if (ourScore > theirScore) {
+            won++;
+        } else if (ourScore == theirScore) {
+            tied++;
+        } else {
+            lost++;
+        }
+        played++;
+        if (opponent != null) {
+            matchResult(null, theirScore, ourScore);
+        }
     }
 }
