@@ -12,5 +12,18 @@ public class Main {
 
         System.out.println("Players in Team " + adelaiCrose.numPlayers());
 
+        Team<BaseballPlayer> baseballTeam = new Team<>("Chicago Cubs");
+        baseballTeam.addPlayer(pat);
+
+        Team<SoccerPlayer> soccerTeam = new Team<>("New Team");
+        soccerTeam.addPlayer(beckham);
+
+        Team<FootballPlayer> melbourne = new Team<>("Melbourne");
+        FootballPlayer banks = new FootballPlayer("Gordon");
+        melbourne.addPlayer(banks);
+
+        Team<FootballPlayer> gordon = new Team<>("Gordon");
+        Team<FootballPlayer> freemanthe = new Team<>("Freemanthe");
+
     }
 }
