@@ -5,7 +5,7 @@ public class Main {
         BaseballPlayer pat = new BaseballPlayer("Pat");
         SoccerPlayer beckham = new SoccerPlayer("Beckham");
 
-        Team adelaiCrose = new Team("Adelaide Cross");
+        Team<FootballPlayer> adelaiCrose = new Team<>("Adelaide Cross");
         adelaiCrose.addPlayer(joe);
         adelaiCrose.addPlayer(pat);
         adelaiCrose.addPlayer(beckham);
@@ -24,6 +24,11 @@ public class Main {
 
         Team<FootballPlayer> gordon = new Team<>("Gordon");
         Team<FootballPlayer> freemanthe = new Team<>("Freemanthe");
+
+        gordon.matchResult(freemanthe, 2, 1);
+        gordon.matchResult(adelaiCrose, 0, 2);
+
+        adelaiCrose.matchResult(baseballTeam, 2, 3);
 
     }
 }
