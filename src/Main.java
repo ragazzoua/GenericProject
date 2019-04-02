@@ -28,7 +28,7 @@ public class Main {
         gordon.matchResult(freemanthe, 2, 1);
         gordon.matchResult(adelaiCrose, 0, 2);
 
-        adelaiCrose.matchResult(baseballTeam, 2, 3);
+        adelaiCrose.matchResult(melbourne, 2, 3);
 
     }
 }
