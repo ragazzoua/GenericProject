@@ -24,7 +24,7 @@ public class Team<T> {
             return false;
         } else {
             members.add(player);
-            System.out.println(((Player)player.)getName() + " added to the team " + this.name);
+            System.out.println(((Player)player).getName() + " added to the team " + this.name);
             return true;
         }
     }
