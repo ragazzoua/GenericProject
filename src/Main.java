@@ -29,6 +29,7 @@ public class Main {
         gordon.matchResult(adelaiCrose, 0, 2);
 
         adelaiCrose.matchResult(melbourne, 2, 3);
+        freemanthe.matchResult(adelaiCrose,3,3);
 
     }
 }
