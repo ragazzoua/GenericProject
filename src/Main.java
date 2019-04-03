@@ -7,8 +7,8 @@ public class Main {
 
         Team<FootballPlayer> adelaiCrose = new Team<>("Adelaide Cross");
         adelaiCrose.addPlayer(joe);
-        adelaiCrose.addPlayer(pat);
-        adelaiCrose.addPlayer(beckham);
+//        adelaiCrose.addPlayer(pat);
+//        adelaiCrose.addPlayer(beckham);
 
         System.out.println("Players in Team " + adelaiCrose.numPlayers());
 
