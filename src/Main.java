@@ -55,6 +55,19 @@ public class Main {
 
         League<Team<BaseballPlayer>> baseballLeague = new League<>("BaseBall League");
 
+        Team rawTeam = new Team("Raw");
+        rawTeam.addPlayer(beckham);
+        rawTeam.addPlayer(pat);
+
+        footballLeague.add(rawTeam);
+
+        League<Team> rawleague = new League<>("Raw");
+        rawleague.add(adelaiCrose);
+        rawleague.add(baseballTeam);
+        rawleague.add(rawTeam);
+
+
+
         footballLeague.showLeagueTable();
 
     }
