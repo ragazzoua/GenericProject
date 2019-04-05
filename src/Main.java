@@ -56,15 +56,21 @@ public class Main {
         League<Team<BaseballPlayer>> baseballLeague = new League<>("BaseBall League");
 
         Team rawTeam = new Team("Raw");
-        rawTeam.addPlayer(beckham);
-        rawTeam.addPlayer(pat);
+        rawTeam.addPlayer(beckham);  //uncheked warning
+        rawTeam.addPlayer(pat);  //uncheked warning
 
-        footballLeague.add(rawTeam);
+        footballLeague.add(rawTeam);    //uncheked warning
 
         League<Team> rawleague = new League<>("Raw");
-        rawleague.add(adelaiCrose);
-        rawleague.add(baseballTeam);
-        rawleague.add(rawTeam);
+        rawleague.add(adelaiCrose);     // no warning
+        rawleague.add(baseballTeam);    // no warning
+        rawleague.add(rawTeam);     // no warning
+
+
+        League reallyRawLeague = new League<>("Raw");
+        reallyRawLeague.add(adelaiCrose);   //uncheked warning
+        reallyRawLeague.add(baseballTeam);  //uncheked warning
+        reallyRawLeague.add(rawTeam);   //uncheked warning
 
 
 
