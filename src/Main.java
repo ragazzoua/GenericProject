@@ -53,7 +53,6 @@ public class Main {
         footballLeague.add(freemanthe);
         footballLeague.add(gordon);
 
-        League<Team<BaseballPlayer>> baseballLeague = new League<>("BaseBall League");
 
         Team rawTeam = new Team("Raw");
         rawTeam.addPlayer(beckham);  //uncheked warning
@@ -61,13 +60,13 @@ public class Main {
 
         footballLeague.add(rawTeam);    //uncheked warning
 
-        League<Team<FootballPlayer>> rawleague = new League<>("Raw");
+        League<Team> rawleague = new League<>("Raw");
         rawleague.add(adelaiCrose);     // no warning
         rawleague.add(baseballTeam);    // no warning
         rawleague.add(rawTeam);     // no warning
 
 
-        League reallyRawLeague = new League<>("Raw");
+        League<Team> reallyRawLeague = new League<>("Raw");
         reallyRawLeague.add(adelaiCrose);   //uncheked warning
         reallyRawLeague.add(baseballTeam);  //uncheked warning
         reallyRawLeague.add(rawTeam);   //uncheked warning
