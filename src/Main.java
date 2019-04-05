@@ -61,7 +61,7 @@ public class Main {
 
         footballLeague.add(rawTeam);    //uncheked warning
 
-        League<FootballPlayer, Team<FootballPlayer>> rawleague = new League<>("Raw");
+        League<Team<FootballPlayer>> rawleague = new League<>("Raw");
         rawleague.add(adelaiCrose);     // no warning
         rawleague.add(baseballTeam);    // no warning
         rawleague.add(rawTeam);     // no warning
