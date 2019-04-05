@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class League< T extends Team> {
+public class League<U extends Player, T extends Team> {
 
     private String name;
     private ArrayList<T> league = new ArrayList<T>();
