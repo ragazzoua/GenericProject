@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -30,6 +33,20 @@ public class Main {
 
         adelaiCrose.matchResult(melbourne, 2, 3);
         freemanthe.matchResult(adelaiCrose,3,3);
+
+        System.out.println("Ranking");
+        System.out.println(adelaiCrose.getName()+ " " + adelaiCrose.ranking());
+        System.out.println(melbourne.getName()+ " " + melbourne.ranking());
+        System.out.println(freemanthe.getName()+ " " + freemanthe.ranking());
+        System.out.println(gordon.getName() + " "+ gordon.ranking());
+
+        System.out.println(adelaiCrose.compareTo(melbourne));
+        System.out.println(adelaiCrose.compareTo(gordon));
+
+//        ArrayList<Team> team;
+//        Collections.sort(team);
+
+
 
     }
 }
